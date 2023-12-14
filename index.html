@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Shopping Cart page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 style="font-size: 25px; font-weight: bold">
+          <i class="fa-brands fa-github"></i>
+          Job Passcard
+        </h1>
+      </div>
+      <nav>
+        <button><a href="#">ABOUT US</a></button>
+        <button><a href="#">PASSCARD</a></button>
+        <button><a href="#">PROFILE</a></button>
+      </nav>
+      <div>
+        <i class="fa-solid fa-magnifying-glass" style="padding-right: 20px"></i>
+        <i class="fa-solid fa-truck" style="padding-right: 10px"></i>
+        <button><a href="#">LOGIN</a></button> |
+        <button><a href="#">SIGN UP</a></button>
+      </div>
+    </header>
+  
+    <div class="area-top">
+      <p class="font"><b>My Cart</b></p>
+    </div>
+    <div class="area">
+      <div class="area-left">
+        <div class="Docs">
+          <a href="#delete"
+            ><div class="bin"><i class="fa-solid fa-trash"></i></div
+          ></a>
+          <div class="file1">
+            <div class="file"><i class="fa-solid fa-file"></i></div>
+            <p class="font"><b class="P1">Google Docs</b></p>
+            <p class="font">Used for business</p>
+          </div>
+          <div class="Google">
+            <p class="font">Google Docs</p>
+            <div class="nav">
+              <div class="status-circle-container">
+                <div class="status-circle circle-level-1"></div>
+                <div class="status-circle circle-level-2"></div>
+                <div class="status-circle circle-level-3"></div>
+              </div>
+              <select style="font-size: 15px" onchange="changeColor()">
+                <option>LV 1-3</option>
+                <option>LV 2-3</option>
+                <option>LV 3-3</option>
+              </select>
+            </div>
+            <div class="THB">
+              <p>THB 150</p>
+            </div>
+          </div>
+        </div>
+        <div class="Slides">
+          <a href="#delete"
+            ><div class="bin"><i class="fa-solid fa-trash"></i></div
+          ></a>
+          <div class="file2">
+            <div class="file"><i class="fa-solid fa-file"></i></div>
+            <p class="font"><b class="P1">Google Slides</b></p>
+            <p class="font">Used for business</p>
+          </div>
+          <div class="Google">
+            <p class="font">Google Slides</p>
+            <div class="nav2">
+              <div class="status-circle-container2">
+                <div class="status-circle2 circle-level2-1"></div>
+                <div class="status-circle2 circle-level2-2"></div>
+                <div class="status-circle2 circle-level2-3"></div>
+                <div class="status-circle2 circle-level2-4"></div>
+              </div>
+              <select style="font-size: 15px">
+                <option><b>LV 1/4</b></option>
+                <option><b>LV 2/4</b></option>
+                <option><b>LV 3/4</b></option>
+                <option><b>LV 4/4</b></option>
+              </select>
+            </div>
+            <div class="THB">
+              <p>THB 150</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="area-right">
+        <div class="right-area">
+          <div class="right0">
+            <div class="font">
+              <p>Order Info</p>
+            </div>
+          </div>
+          <div class="right1">
+            <div class="font">
+              <p>Subtotal</p>
+            </div>
+            <div class="THB">
+              <b>THB 300</b>
+            </div>
+          </div>
+          <div class="right2">
+            <i
+              class="fa-solid fa-ticket"
+              style="font-size: 30px; padding-right: 10px; color: aquamarine"
+            ></i>
+            <input type="text" placeholder="Promotion code" id="promoInput" />
+            <button class="apply-button" onclick="applyPromotion()">
+              APPLY
+            </button>
+          </div>
+          <hr />
+          <div class="right3">
+            <div class="font">
+              <p>Total paymemt</p>
+            </div>
+            <div class="THB"><b>THB 300</b></div>
+          </div>
+          <div class="right4">
+            <button class="apply-button2"><b>LOG IN TO CHECKOUT</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
